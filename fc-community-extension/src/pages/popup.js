@@ -6,12 +6,14 @@ import { getNotes } from '../utils/backend';
 import { ethers } from 'ethers';
 import { cutText, elipseText } from '../utils/constants';
 
+import './style.css';
+
 function FCProfile(props) {
   function StatCard(props) {
     return (
-      <div style="text-align: center;">
-        <div style="font-size: 140%; font-weight: bold;">{props.value}</div>
-        <div style="font-size: 110%;">{props.name}</div>
+      <div className="text-center">
+        <div className="font-bold text-xl">{props.value}</div>
+        <div className="text-md opacity-50">{props.name}</div>
       </div>
     );
   }
